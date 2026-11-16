@@ -110,7 +110,7 @@ Source : présentation de l'inspection générale, septembre 2026 (BO spécial n
 
 ## 7. Organisation du dépôt
 
-Ce dépôt (`SVT-class`) est **privé**. Il a deux parties : **`cours/`**, les documents de cours, et **`usine/`**, tout ce qui sert à les fabriquer. Le contenu de `cours/` est publié dans le dépôt **public** [VinceIXIV/SVT-cour](https://github.com/VinceIXIV/SVT-cour), dont l'enseignant reçoit le lien. Le dépôt public contient : `cours/` (mêmes chemins qu'ici, **sans README** ; l'enseignant télécharge chaque document ou le zip de la séance), une copie de ce `CLAUDE.md` (pour que le validateur relise avec les mêmes règles) et `verif/`, où le validateur dépose ses rapports (`verif/<classe>/<séance>-vN.md`, une version par relecture). La publication ne modifie jamais `verif/`.
+Ce dépôt (`SVT-class`) est **privé**. Il a deux parties : **`cours/`**, les documents de cours, et **`usine/`**, tout ce qui sert à les fabriquer. Le contenu de `cours/` est publié dans le dépôt **public** [VinceIXIV/SVT-cour](https://github.com/VinceIXIV/SVT-cour), dont l'enseignant reçoit le lien. Le dépôt public contient : `cours/` (mêmes chemins qu'ici, **sans README** ; l'enseignant télécharge chaque document), une copie de ce `CLAUDE.md` (pour que le validateur relise avec les mêmes règles) et `verif/`, où le validateur dépose ses rapports (`verif/<classe>/<séance>-vN.md`, une version par relecture). La publication ne modifie jamais `verif/`.
 
 ```
 SVT-class/
@@ -123,8 +123,7 @@ SVT-class/
 │   │   │   ├── 4e-S01-fiche-revision.docx / .pdf
 │   │   │   ├── 4e-S01-fiche-prof.docx / .pdf
 │   │   │   ├── 4e-S01-diaporama.pptx
-│   │   │   ├── 4e-S01-devoir-mensuel.docx / .pdf   (seulement la semaine où il est donné)
-│   │   │   └── 4e-S01-seance-complete.zip          tous les documents de la séance (généré)
+│   │   │   └── 4e-S01-devoir-mensuel.docx / .pdf   (seulement la semaine où il est donné)
 │   │   └── …
 │   └── 3e/
 │       └── S22-…/ 3e-S22-sujet-type-brevet.docx / .pdf
@@ -146,8 +145,8 @@ SVT-class/
 - Noms des documents : préfixés par la classe et la semaine (`4e-S01-…`), pour rester identifiables une fois téléchargés.
 - Rien d'autre que des documents de cours dans `cours/` : textes sources, scripts, images et fichiers de contrôle vont dans `usine/`.
 - Tout fichier Word est aussi exporté en PDF.
-- Aucun README ni aucun fichier hors cours dans `cours/` (seulement .pdf, .docx, .pptx, .zip).
-- Après chaque séance produite : `python usine/outils/publier.py` (archive zip de chaque séance, puis copie de `cours/` vers le dépôt public et envoi, sous l'auteur neutre « Cours de SVT » : aucune adresse personnelle dans le dépôt public).
+- Aucun README ni aucun fichier hors cours dans `cours/` (seulement .pdf, .docx, .pptx).
+- Après chaque séance produite : `python usine/outils/publier.py` (copie de `cours/` vers le dépôt public et envoi, sous l'auteur neutre « Cours de SVT » : aucune adresse personnelle dans le dépôt public).
 - Les documents portent l'auteur « Cours de SVT » dans leurs propriétés.
 
 ## 8. Mise en page
