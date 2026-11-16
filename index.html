@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cours de SVT · 4e et 3e</title>
+<meta name="description" content="Cours de SVT de 4e et de 3e : programme de l'année, fiches de cours, fiches de révision, fiches prof et diaporamas à télécharger.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231F2A44'/%3E%3Cpath d='M6 20 L12 14 L16 18 L22 10 L26 14' stroke='%23E4572E' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --encre:#1F2A44; --texte:#26303F; --gris:#6B7280; --gris-clair:#E5E7EB; --fond:#F7F5F1; --carte:#FFFFFF;
+  --lave:#E4572E; --onde:#1B9AAA; --ambre:#F3A712; --vert:#4E8C42;
+  --t-lave:#FDECE6; --t-onde:#E3F4F6; --t-ambre:#FEF4E0; --t-encre:#E9ECF3; --t-vert:#E7F2E4;
+  --rayon:14px; --ombre:0 1px 2px rgba(31,42,68,.06),0 4px 16px rgba(31,42,68,.06);
+  --accent:var(--lave); --t-accent:var(--t-lave);
+}
+body.c3e{--accent:var(--onde); --t-accent:var(--t-onde);}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--fond);color:var(--texte);font:16px/1.55 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.titre{font-family:"Century Gothic",Questrial,"Source Sans 3",sans-serif;color:var(--encre);letter-spacing:-.01em}
+a{color:inherit}
+.conteneur{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* --- en-tête --- */
+header.hero{background:var(--encre);color:#fff;position:relative;overflow:hidden}
+.hero .conteneur{padding-top:44px;padding-bottom:40px;position:relative;z-index:1}
+.hero svg.strates{position:absolute;right:-40px;bottom:-10px;width:520px;max-width:70%;opacity:.95}
+.surtitre{display:inline-flex;gap:8px;align-items:center;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#C9D1E3;font-weight:600}
+.surtitre .pastille{background:var(--lave);color:#fff;border-radius:999px;padding:3px 10px;letter-spacing:.1em}
+.hero h1{color:#fff;font-size:clamp(30px,5vw,46px);margin:14px 0 10px;line-height:1.1}
+.hero p.intro{max-width:560px;color:#DCE2EE;margin:0 0 24px;font-size:17px}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.bouton{display:inline-flex;align-items:center;gap:8px;border-radius:10px;padding:10px 16px;font-weight:600;font-size:15px;text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .12s ease,background .15s ease,box-shadow .15s ease}
+.bouton:hover{transform:translateY(-1px)}
+.bouton:focus-visible,.onglet:focus-visible,summary:focus-visible,.dl:focus-visible{outline:3px solid var(--ambre);outline-offset:2px}
+.bouton.plein{background:var(--lave);color:#fff}
+.bouton.plein:hover{box-shadow:0 6px 18px rgba(228,87,46,.35)}
+.bouton.clair{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.25);color:#fff}
+.bouton.clair:hover{background:rgba(255,255,255,.15)}
+.bouton svg{width:18px;height:18px;flex:none}
+.chiffres{display:flex;gap:28px;margin-top:30px;flex-wrap:wrap}
+.chiffre b{display:block;font-family:"Century Gothic",Questrial,sans-serif;font-size:28px;color:#fff;line-height:1}
+.chiffre span{font-size:13px;color:#C9D1E3}
+
+/* --- barre de navigation des classes --- */
+nav.barre{position:sticky;top:0;z-index:10;background:rgba(247,245,241,.92);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--gris-clair)}
+nav.barre .conteneur{display:flex;align-items:center;gap:14px;padding-top:12px;padding-bottom:12px;flex-wrap:wrap}
+.onglets{display:inline-flex;background:var(--t-encre);border-radius:12px;padding:4px;gap:4px}
+.onglet{border:0;background:transparent;border-radius:9px;padding:8px 18px;font:600 15px "Source Sans 3",sans-serif;color:var(--encre);cursor:pointer}
+.onglet[aria-selected="true"]{background:var(--carte);box-shadow:var(--ombre);color:var(--accent)}
+.recherche{flex:1;min-width:200px;position:relative}
+.recherche input{width:100%;border:1px solid var(--gris-clair);background:var(--carte);border-radius:10px;padding:9px 12px 9px 36px;font:15px "Source Sans 3",sans-serif;color:var(--texte)}
+.recherche input:focus{outline:2px solid var(--accent);border-color:transparent}
+.recherche svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--gris)}
+.seul-dispo{display:inline-flex;align-items:center;gap:7px;font-size:14px;color:var(--gris);cursor:pointer;user-select:none}
+.seul-dispo input{accent-color:var(--accent);width:16px;height:16px}
+
+/* --- sections --- */
+section{padding:36px 0}
+.entete-section{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+.entete-section h2{margin:0;font-size:26px}
+.entete-section p{margin:4px 0 0;color:var(--gris)}
+
+/* vue d'ensemble : frise des semaines */
+.frise{background:var(--carte);border-radius:var(--rayon);box-shadow:var(--ombre);padding:20px 22px}
+.frise-ligne{display:flex;gap:3px;margin:10px 0 6px}
+.frise-ligne .bloc{height:34px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#fff;cursor:pointer;min-width:0;overflow:hidden;white-space:nowrap;transition:filter .15s}
+.frise-ligne .bloc:hover{filter:brightness(1.08)}
+.frise-legende{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:8px 18px;margin-top:12px}
+.frise-legende a{display:flex;gap:10px;align-items:baseline;text-decoration:none;font-size:14px}
+.frise-legende a:hover span.t{text-decoration:underline}
+.frise-legende i{width:10px;height:10px;border-radius:3px;flex:none;display:inline-block;transform:translateY(1px)}
+.frise-legende .s{color:var(--gris);font-variant-numeric:tabular-nums;flex:none}
+.note{font-size:13px;color:var(--gris);margin-top:12px}
+
+/* chapitres */
+.chapitre{background:var(--carte);border-radius:var(--rayon);box-shadow:var(--ombre);margin-bottom:18px;overflow:hidden;scroll-margin-top:80px}
+.chapitre>header{display:flex;gap:16px;align-items:center;padding:18px 22px;border-left:6px solid var(--couleur)}
+.num{flex:none;width:44px;height:44px;border-radius:12px;background:var(--couleur);color:#fff;display:flex;align-items:center;justify-content:center;font:700 19px "Century Gothic",Questrial,sans-serif}
+.chapitre h3{margin:0;font-size:19px;line-height:1.25}
+.chapitre>header>.infos{flex:1 1 0;min-width:0}
+.meta{font-size:13px;color:var(--gris);margin-top:3px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.theme{background:var(--t-encre);color:var(--encre);border-radius:999px;padding:1px 9px;font-weight:600;font-size:12px}
+.progression{margin-left:auto;text-align:right;flex:none;font-size:13px;color:var(--gris)}
+.progression .jauge{width:110px;height:6px;border-radius:9px;background:var(--gris-clair);margin-top:6px;overflow:hidden}
+.progression .jauge i{display:block;height:100%;background:var(--vert);border-radius:9px}
+
+/* séances */
+.seance{border-top:1px solid var(--gris-clair)}
+.seance>summary{list-style:none;display:grid;grid-template-columns:56px 1fr auto 22px;gap:14px;align-items:center;padding:13px 22px;cursor:default}
+.seance>summary::-webkit-details-marker{display:none}
+.seance.dispo>summary{cursor:pointer}
+.seance.dispo>summary:hover{background:#FBFAF8}
+.sem{font:700 15px "Century Gothic",Questrial,sans-serif;color:var(--encre)}
+.seance .titre-s{font-size:16px}
+.seance:not(.dispo) .titre-s{color:var(--gris)}
+.etat{font-size:12px;font-weight:700;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.etat.oui{background:var(--t-vert);color:var(--vert)}
+.etat.non{background:#F1F2F4;color:#8A909A}
+.chevron{width:20px;height:20px;color:var(--gris);transition:transform .2s}
+.seance[open] .chevron{transform:rotate(180deg)}
+.docs{padding:4px 22px 22px 92px;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.doc{border:1px solid var(--gris-clair);border-radius:12px;padding:14px;display:flex;flex-direction:column;gap:6px;background:#FDFDFC}
+.doc .haut{display:flex;align-items:center;gap:10px}
+.doc .ico{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;flex:none}
+.doc .ico svg{width:18px;height:18px}
+.doc.ens .ico{background:var(--t-encre);color:var(--encre)}
+.doc.elv .ico{background:var(--t-ambre);color:#B87A00}
+.doc b{font-size:15px;color:var(--encre);display:block;line-height:1.2}
+.doc .pour{font-size:12px;color:var(--gris)}
+.doc p{margin:0;font-size:13px;color:var(--gris);flex:1}
+.dls{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+.dl{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:13px;font-weight:700;border-radius:8px;padding:6px 10px;border:1px solid var(--gris-clair);color:var(--encre);background:#fff;transition:background .15s,border-color .15s}
+.dl:hover{background:var(--t-accent);border-color:var(--accent)}
+.dl svg{width:14px;height:14px}
+.dl small{font-weight:400;color:var(--gris)}
+.dl.pdf{border-color:#F3C3B4}
+.dl.ppt{border-color:#F6D9A8}
+.dl.word{border-color:#C7D3EA}
+.vide{padding:30px;text-align:center;color:var(--gris);background:var(--carte);border-radius:var(--rayon)}
+
+/* guide */
+.guide{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.etape{background:var(--carte);border-radius:var(--rayon);box-shadow:var(--ombre);padding:18px}
+.etape .n{font:700 13px "Century Gothic",Questrial,sans-serif;color:var(--lave);letter-spacing:.08em}
+.etape h3{margin:6px 0 6px;font-size:17px}
+.etape p{margin:0;font-size:14.5px;color:var(--texte)}
+footer{border-top:1px solid var(--gris-clair);padding:26px 0 40px;color:var(--gris);font-size:14px}
+footer .conteneur{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+footer a{color:var(--encre)}
+
+@media (max-width:700px){
+  .hero svg.strates{opacity:.25}
+  .seance>summary{grid-template-columns:44px 1fr 18px;padding:12px 16px}
+  .seance>summary .etat{display:none}
+  .docs{padding:4px 16px 18px}
+  .chapitre>header{padding:16px;flex-wrap:wrap}
+  .chapitre>header>.infos{flex-basis:calc(100% - 64px)}
+  .progression{margin-left:60px;text-align:left}
+  .frise-ligne .bloc{font-size:0}
+}
+@media print{nav.barre,.hero svg.strates{display:none}.seance .docs{display:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <svg class="strates" viewBox="0 0 520 260" aria-hidden="true">
+    <polygon points="40,90 300,90 330,60 520,60 520,130 340,130 310,160 40,160" fill="#E3C79F" opacity=".9"/>
+    <polygon points="40,160 310,160 340,130 520,130 520,200 360,200 330,230 40,230" fill="#C9955F" opacity=".9"/>
+    <polygon points="40,230 330,230 360,200 520,200 520,260 40,260" fill="#9C6B45" opacity=".9"/>
+    <line x1="290" y1="60" x2="372" y2="260" stroke="#E4572E" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="340" cy="190" r="22" fill="none" stroke="#1B9AAA" stroke-width="3" opacity=".9"/>
+    <circle cx="340" cy="190" r="44" fill="none" stroke="#1B9AAA" stroke-width="3" opacity=".6"/>
+    <circle cx="340" cy="190" r="68" fill="none" stroke="#1B9AAA" stroke-width="3" opacity=".35"/>
+    <polygon points="340,178 344,187 354,188 346,194 349,204 340,198 331,204 334,194 326,188 336,187" fill="#E4572E"/>
+  </svg>
+  <div class="conteneur">
+    <div class="surtitre"><span class="pastille">2026-2027</span> Sciences de la vie et de la Terre</div>
+    <h1>Cours de SVT<br>4e et 3e</h1>
+    <p class="intro">Toutes les séances de l'année, semaine par semaine : fiche prof, diaporama, fiche de cours et fiche de révision, prêts à télécharger.</p>
+    <div class="actions">
+      <a class="bouton plein" href="#programme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></svg>Voir les séances</a>
+      <a class="bouton clair" href="programme-annuel.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M5 21h14"/></svg>Programme de l'année (PDF)</a>
+    </div>
+    <div class="chiffres" id="chiffres"></div>
+  </div>
+</header>
+
+<nav class="barre" aria-label="Classe">
+  <div class="conteneur">
+    <div class="onglets" role="tablist" id="onglets"></div>
+    <label class="recherche"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input type="search" id="filtre" placeholder="Rechercher une séance (ex. volcans, ADN, S12)" aria-label="Rechercher une séance"></label>
+    <label class="seul-dispo"><input type="checkbox" id="dispo"> Séances disponibles seulement</label>
+  </div>
+</nav>
+
+<main>
+  <section id="programme">
+    <div class="conteneur">
+      <div class="entete-section">
+        <div><h2 id="titre-programme">Programme de l'année</h2><p id="sous-titre"></p></div>
+        <a class="bouton clair" style="background:var(--carte);color:var(--encre);border-color:var(--gris-clair)" href="programme-annuel.pdf" target="_blank" rel="noopener">Ouvrir le programme en PDF</a>
+      </div>
+      <div class="frise" id="frise"></div>
+    </div>
+  </section>
+
+  <section id="seances" style="padding-top:0">
+    <div class="conteneur" id="chapitres"></div>
+  </section>
+
+  <section id="mode-emploi" style="padding-top:8px">
+    <div class="conteneur">
+      <div class="entete-section"><div><h2>Mode d'emploi</h2><p>Une séance d'1 h par semaine, avec un vidéoprojecteur.</p></div></div>
+      <div class="guide">
+        <div class="etape"><div class="n">1 · AVANT LE COURS</div><h3>Lire la fiche prof</h3><p>La première page résume la séance. La suite explique chaque notion, avec les réponses attendues et les questions que les élèves peuvent poser.</p></div>
+        <div class="etape"><div class="n">2 · IMPRIMER</div><h3>Fiche de cours et fiche de révision</h3><p>Une de chaque par élève. La fiche de cours se garde dans le classeur ; la fiche de révision contient un exercice de type brevet.</p></div>
+        <div class="etape"><div class="n">3 · EN CLASSE</div><h3>Projeter le diaporama</h3><p>Il suit le plan de la fiche de cours. Les notes de chaque diapositive indiquent quoi dire et quoi demander à la classe.</p></div>
+        <div class="etape"><div class="n">4 · FIN DE SÉANCE</div><h3>Faire le bilan</h3><p>Les élèves légendent le schéma bilan de leur fiche ; la correction est sur la dernière diapositive et dans la fiche prof.</p></div>
+      </div>
+      <p class="note">Chaque information des cours est vérifiée auprès de sources fiables, listées dans la fiche prof, puis relue par une vérification indépendante.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="conteneur">
+    <span>Cours de SVT · cycle 4 · mis à jour le <span id="maj"></span></span>
+    <span><a id="lien-depot" href="#">Voir les fichiers sur GitHub</a></span>
+  </div>
+</footer>
+
+<script>
+const DATA = {"classes": [{"classe": "4e", "complement": "29 semaines de cours et 6 semaines de devoirs mensuels et de rattrapage", "chapitres": [{"numero": 1, "titre": "La Terre, planète active", "theme": "T1", "seances": [{"semaine": "S01", "titre": "L'origine des séismes", "docs": [{"ordre": 1, "nom": "Fiche prof", "pour": "Enseignant", "desc": "Déroulé, notions expliquées, réponses attendues", "fichiers": [{"format": "PDF", "chemin": "cours/4e/S01-origine-des-seismes/4e-S01-fiche-prof.pdf", "taille": 294054}, {"format": "Word", "chemin": "cours/4e/S01-origine-des-seismes/4e-S01-fiche-prof.docx", "taille": 50468}]}, {"ordre": 2, "nom": "Diaporama", "pour": "Enseignant", "desc": "Support du cours, avec les notes de l'orateur", "fichiers": [{"format": "PowerPoint", "chemin": "cours/4e/S01-origine-des-seismes/4e-S01-diaporama.pptx", "taille": 80964}]}, {"ordre": 3, "nom": "Fiche de cours", "pour": "Élèves", "desc": "Le cours de l'élève, à imprimer", "fichiers": [{"format": "PDF", "chemin": "cours/4e/S01-origine-des-seismes/4e-S01-fiche-cours.pdf", "taille": 300076}, {"format": "Word", "chemin": "cours/4e/S01-origine-des-seismes/4e-S01-fiche-cours.docx", "taille": 723608}]}, {"ordre": 4, "nom": "Fiche de révision", "pour": "Élèves", "desc": "Synthèse et exercice de type brevet", "fichiers": [{"format": "PDF", "chemin": "cours/4e/S01-origine-des-seismes/4e-S01-fiche-revision.pdf", "taille": 275577}, {"format": "Word", "chemin": "cours/4e/S01-origine-des-seismes/4e-S01-fiche-revision.docx", "taille": 313876}]}]}, {"semaine": "S02", "titre": "Mesurer un séisme : sismographe, magnitude, intensité", "docs": []}, {"semaine": "S03", "titre": "Les volcans : deux types d'éruptions", "docs": []}, {"semaine": "S04", "titre": "Où se produisent séismes et volcans ? Les plaques", "docs": []}, {"semaine": "S05", "titre": "Les plaques bougent : écartement et rapprochement", "docs": []}, {"semaine": "S06", "titre": "Se protéger des séismes et des volcans", "docs": []}]}, {"numero": 2, "titre": "Météo, climat et risques naturels", "theme": "T1", "seances": [{"semaine": "S07", "titre": "Météo et climat : quelle différence ?", "docs": []}, {"semaine": "S08", "titre": "Les zones climatiques : pourquoi fait-il plus chaud à l'équateur ?", "docs": []}, {"semaine": "S09", "titre": "Tempêtes, cyclones, inondations : prévenir les risques", "docs": []}]}, {"numero": 3, "titre": "Nutrition et besoins des cellules", "theme": "T2 · T3", "seances": [{"semaine": "S10", "titre": "De quoi nos cellules ont-elles besoin ?", "docs": []}, {"semaine": "S11", "titre": "La digestion : des aliments aux nutriments", "docs": []}, {"semaine": "S12", "titre": "Le passage des nutriments dans le sang", "docs": []}, {"semaine": "S13", "titre": "La respiration : le dioxygène entre dans le sang", "docs": []}, {"semaine": "S14", "titre": "Le cœur et les vaisseaux : la distribution aux cellules", "docs": []}, {"semaine": "S15", "titre": "L'utilisation des nutriments et du dioxygène par les cellules", "docs": []}]}, {"numero": 4, "titre": "Nutrition des plantes et transport des matières", "theme": "T2", "seances": [{"semaine": "S16", "titre": "Les besoins d'une plante pour vivre", "docs": []}, {"semaine": "S17", "titre": "La photosynthèse : la plante fabrique sa matière", "docs": []}, {"semaine": "S18", "titre": "Les sèves : le transport des matières dans la plante", "docs": []}]}, {"numero": 5, "titre": "Système nerveux, muscles et cerveau ; hygiène de vie", "theme": "T3", "seances": [{"semaine": "S19", "titre": "Du stimulus au mouvement : organes des sens, nerfs, cerveau, muscles", "docs": []}, {"semaine": "S20", "titre": "Le message nerveux et les neurones", "docs": []}, {"semaine": "S21", "titre": "Le cerveau, centre de commande", "docs": []}, {"semaine": "S22", "titre": "Les muscles et l'effort physique", "docs": []}, {"semaine": "S23", "titre": "Sommeil et écrans : préserver son cerveau", "docs": []}, {"semaine": "S24", "titre": "Alcool, tabac, drogues : effets sur le cerveau", "docs": []}]}, {"numero": 6, "titre": "Reproduction des êtres vivants et transmission de la vie", "theme": "T2 · T3", "seances": [{"semaine": "S25", "titre": "La reproduction des plantes", "docs": []}, {"semaine": "S26", "titre": "La reproduction des animaux", "docs": []}, {"semaine": "S27", "titre": "La fécondation : la rencontre de deux cellules", "docs": []}, {"semaine": "S28", "titre": "De la cellule-œuf à l'organisme", "docs": []}, {"semaine": "S29", "titre": "La transmission de la vie chez l'humain, au niveau cellulaire", "docs": []}]}]}, {"classe": "3e", "complement": "26 semaines de cours et 9 semaines de devoirs mensuels et de rattrapage", "chapitres": [{"numero": 1, "titre": "Génétique : cellule, ADN, chromosomes, hérédité", "theme": "T2", "seances": [{"semaine": "S01", "titre": "Les caractères héréditaires : tous semblables, tous différents", "docs": []}, {"semaine": "S02", "titre": "La cellule et son noyau : où se trouve l'information génétique ?", "docs": []}, {"semaine": "S03", "titre": "Les chromosomes et le caryotype", "docs": []}, {"semaine": "S04", "titre": "ADN, gènes et allèles", "docs": []}, {"semaine": "S05", "titre": "La division cellulaire conserve l'information génétique", "docs": []}, {"semaine": "S06", "titre": "L'hérédité : ce que l'on reçoit de ses parents", "docs": []}]}, {"numero": 2, "titre": "Diversité génétique, parenté et évolution des êtres vivants", "theme": "T2", "seances": [{"semaine": "S07", "titre": "Pourquoi chaque individu est-il unique ?", "docs": []}, {"semaine": "S08", "titre": "Les mutations, source de nouveauté", "docs": []}, {"semaine": "S09", "titre": "Les liens de parenté entre espèces", "docs": []}, {"semaine": "S10", "titre": "L'évolution et la sélection naturelle", "docs": []}, {"semaine": "S11", "titre": "La biodiversité au cours des temps géologiques", "docs": []}]}, {"numero": 3, "titre": "Monde microbien et immunité", "theme": "T3", "seances": [{"semaine": "S12", "titre": "Bactéries, virus, champignons : le monde microbien", "docs": []}, {"semaine": "S13", "titre": "Contamination et infection", "docs": []}, {"semaine": "S14", "titre": "Les premières défenses de l'organisme", "docs": []}, {"semaine": "S15", "titre": "Lymphocytes et anticorps ; le principe de la vaccination", "docs": []}, {"semaine": "S16", "titre": "Antibiotiques et hygiène", "docs": []}]}, {"numero": 4, "titre": "Activités humaines et environnement", "theme": "T1", "seances": [{"semaine": "S17", "titre": "Les ressources naturelles : renouvelables ou non ?", "docs": []}, {"semaine": "S18", "titre": "L'eau et les sols, des ressources à préserver", "docs": []}, {"semaine": "S19", "titre": "Le changement climatique : causes et conséquences", "docs": []}, {"semaine": "S20", "titre": "La biodiversité menacée par les activités humaines", "docs": []}, {"semaine": "S21", "titre": "Agir pour l'environnement", "docs": []}]}, {"numero": 5, "titre": "Révisions du brevet et brevet blanc", "theme": "Tous", "seances": [{"semaine": "S22", "titre": "Méthode : extraire une information d'un document", "docs": []}, {"semaine": "S23", "titre": "Brevet blanc", "docs": []}, {"semaine": "S24", "titre": "Correction du brevet blanc : rédiger un raisonnement", "docs": []}, {"semaine": "S25", "titre": "Révisions : la planète Terre et le vivant", "docs": []}, {"semaine": "S26", "titre": "Révisions : le corps humain et la santé ; sujet type brevet", "docs": []}]}]}], "themes": {"T1": "La planète Terre, l'environnement et l'action humaine", "T2": "Le vivant et son évolution", "T3": "Le corps humain et la santé"}, "maj": "16/11/2026", "depot": "https://github.com/VinceIXIV/SVT-cour"};
+const COULEURS = ["#E4572E","#F3A712","#1B9AAA","#4E8C42","#7B5EA7","#1F2A44"];
+const ICONES = {
+  doc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>',
+  diapo:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8"/></svg>',
+  prof:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2zM8 7h7M8 11h5"/></svg>',
+  dl:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></svg>',
+  chevron:'<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>'
+};
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const taille = o => o > 1e6 ? (o/1e6).toFixed(1).replace(".", ",") + " Mo" : Math.max(1, Math.round(o/1e3)) + " Ko";
+const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+
+let classe = (location.hash.match(/^#(4e|3e)/) || [])[1] || "4e";
+
+function compter(c){
+  let n = 0, d = 0;
+  c.chapitres.forEach(ch => ch.seances.forEach(s => { n++; if (s.docs.length) d++; }));
+  return [d, n];
+}
+
+function chiffres(){
+  let d = 0, n = 0;
+  DATA.classes.forEach(c => { const [a, b] = compter(c); d += a; n += b; });
+  document.getElementById("chiffres").innerHTML =
+    `<div class="chiffre"><b>${n}</b><span>séances prévues</span></div>
+     <div class="chiffre"><b>${d}</b><span>disponible${d > 1 ? "s" : ""}</span></div>
+     <div class="chiffre"><b>1 h</b><span>par semaine</span></div>
+     <div class="chiffre"><b>2</b><span>niveaux : 4e et 3e</span></div>`;
+}
+
+function onglets(){
+  document.getElementById("onglets").innerHTML = DATA.classes.map(c =>
+    `<button class="onglet" role="tab" aria-selected="${c.classe === classe}" data-c="${c.classe}">${c.classe}</button>`).join("");
+  document.querySelectorAll(".onglet").forEach(b => b.onclick = () => { classe = b.dataset.c; history.replaceState(null, "", "#" + classe); rendre(); });
+}
+
+function frise(c){
+  const blocs = [], legende = [];
+  c.chapitres.forEach((ch, i) => {
+    const coul = COULEURS[i % COULEURS.length], n = ch.seances.length;
+    blocs.push(`<div class="bloc" style="flex:${n};background:${coul}" title="${esc(ch.titre)}" onclick="document.getElementById('ch-${c.classe}-${ch.numero}').scrollIntoView()">Ch. ${ch.numero}</div>`);
+    legende.push(`<a href="#ch-${c.classe}-${ch.numero}"><i style="background:${coul}"></i><span class="s">${ch.seances[0].semaine}–${ch.seances[n-1].semaine}</span><span class="t">${esc(ch.titre)}</span></a>`);
+  });
+  document.getElementById("frise").innerHTML =
+    `<div style="font-size:13px;color:var(--gris)">${esc(c.complement)}, soit 35 semaines.</div>
+     <div class="frise-ligne">${blocs.join("")}</div>
+     <div class="frise-legende">${legende.join("")}</div>
+     <p class="note">Les semaines de devoirs mensuels et de rattrapage s'intercalent dans le calendrier ; un devoir est rangé dans la séance où il est donné.${c.classe === "3e" ? " Les élèves de 3e passent le brevet en 2027." : ""}</p>`;
+}
+
+function iconeDoc(d){
+  if (d.nom === "Diaporama") return ICONES.diapo;
+  if (d.nom === "Fiche prof" || d.nom.startsWith("Corrigé")) return ICONES.prof;
+  return ICONES.doc;
+}
+
+function boutons(d){
+  return d.fichiers.map(f => {
+    const cls = f.format === "PDF" ? "pdf" : f.format === "PowerPoint" ? "ppt" : "word";
+    const nom = f.chemin.split("/").pop();
+    return `<a class="dl ${cls}" href="${esc(f.chemin)}" download="${esc(nom)}" title="Télécharger ${esc(nom)}">${ICONES.dl}${f.format} <small>${taille(f.taille)}</small></a>`;
+  }).join("");
+}
+
+function seance(c, s){
+  const dispo = s.docs.length > 0;
+  const docs = dispo ? `<div class="docs">${s.docs.map(d =>
+      `<div class="doc ${d.pour === "Élèves" ? "elv" : "ens"}">
+         <div class="haut"><span class="ico">${iconeDoc(d)}</span><span><b>${esc(d.nom)}</b><span class="pour">Pour : ${esc(d.pour.toLowerCase())}</span></span></div>
+         <p>${esc(d.desc)}</p>
+         <div class="dls">${boutons(d)}</div>
+       </div>`).join("")}</div>` : "";
+  return `<details class="seance ${dispo ? "dispo" : ""}" data-txt="${esc(norm(s.semaine + " " + s.titre))}" ${dispo ? "" : 'onclick="return false"'}>
+      <summary><span class="sem">${s.semaine}</span><span class="titre-s">${esc(s.titre)}</span>
+      <span class="etat ${dispo ? "oui" : "non"}">${dispo ? "Disponible" : "À venir"}</span>${dispo ? ICONES.chevron : "<span></span>"}</summary>${docs}</details>`;
+}
+
+function chapitres(c){
+  document.getElementById("chapitres").innerHTML = c.chapitres.map((ch, i) => {
+    const coul = COULEURS[i % COULEURS.length];
+    const d = ch.seances.filter(s => s.docs.length).length, n = ch.seances.length;
+    const theme = ch.theme === "Tous" ? "Tous les thèmes" : "Thème " + ch.theme;
+    return `<article class="chapitre" id="ch-${c.classe}-${ch.numero}" style="--couleur:${coul}">
+      <header><span class="num">${ch.numero}</span>
+        <div class="infos"><h3>${esc(ch.titre)}</h3><div class="meta"><span>${ch.seances[0].semaine} à ${ch.seances[n-1].semaine} · ${n} séances</span><span class="theme">${esc(theme)}</span></div></div>
+        <div class="progression">${d} / ${n} disponible${d > 1 ? "s" : ""}<div class="jauge"><i style="width:${100*d/n}%"></i></div></div>
+      </header>
+      ${ch.seances.map(s => seance(c, s)).join("")}
+    </article>`;
+  }).join("") + '<div class="vide" id="aucun" hidden>Aucune séance ne correspond à la recherche.</div>';
+  // ouvre la première séance disponible
+  const premiere = document.querySelector(".seance.dispo");
+  if (premiere) premiere.open = true;
+}
+
+function filtrer(){
+  const q = norm(document.getElementById("filtre").value.trim());
+  const seul = document.getElementById("dispo").checked;
+  let visibles = 0;
+  document.querySelectorAll(".chapitre").forEach(ch => {
+    let n = 0;
+    ch.querySelectorAll(".seance").forEach(s => {
+      const ok = (!q || s.dataset.txt.includes(q) || norm(ch.querySelector("h3").textContent).includes(q)) && (!seul || s.classList.contains("dispo"));
+      s.hidden = !ok; if (ok) n++;
+    });
+    ch.hidden = n === 0; visibles += n;
+  });
+  document.getElementById("aucun").hidden = visibles > 0;
+}
+
+function rendre(){
+  const c = DATA.classes.find(x => x.classe === classe);
+  document.body.classList.toggle("c3e", classe === "3e");
+  document.getElementById("titre-programme").textContent = "Programme de l'année · " + classe;
+  const [d, n] = compter(c);
+  document.getElementById("sous-titre").textContent = `${n} séances d'1 h · ${d} disponible${d > 1 ? "s" : ""} au téléchargement`;
+  onglets(); frise(c); chapitres(c); filtrer();
+}
+
+document.getElementById("filtre").addEventListener("input", filtrer);
+document.getElementById("dispo").addEventListener("change", filtrer);
+document.getElementById("maj").textContent = DATA.maj;
+document.getElementById("lien-depot").href = DATA.depot;
+window.addEventListener("hashchange", () => { const m = location.hash.match(/^#(4e|3e)$/); if (m && m[1] !== classe) { classe = m[1]; rendre(); } });
+chiffres(); rendre();
+</script>
+</body>
+</html>

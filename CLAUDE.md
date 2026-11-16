@@ -110,7 +110,7 @@ Source : présentation de l'inspection générale, septembre 2026 (BO spécial n
 
 ## 7. Organisation du dépôt
 
-Ce dépôt (`SVT-class`) est **privé**. Il a deux parties : **`cours/`**, les documents de cours, et **`usine/`**, tout ce qui sert à les fabriquer. Le contenu de `cours/` est publié dans le dépôt **public** [VinceIXIV/SVT-cour](https://github.com/VinceIXIV/SVT-cour), dont l'enseignant reçoit le lien. Le dépôt public contient : `programme-annuel.pdf` (programme de l'année de 4e et de 3e, semaine par semaine, généré par `usine/outils/programme.py`), `cours/` (mêmes chemins qu'ici, **sans README** ; l'enseignant télécharge chaque document), une copie de ce `CLAUDE.md` (pour que le validateur relise avec les mêmes règles) et `verif/`, où le validateur dépose ses rapports (`verif/<classe>/<séance>-vN.md`, une version par relecture). La publication ne modifie jamais `verif/`.
+Ce dépôt (`SVT-class`) est **privé**. Il a deux parties : **`cours/`**, les documents de cours, et **`usine/`**, tout ce qui sert à les fabriquer. Le contenu de `cours/` est publié dans le dépôt **public** [VinceIXIV/SVT-cour](https://github.com/VinceIXIV/SVT-cour), dont l'enseignant reçoit le lien. Le dépôt public est aussi un site GitHub Pages ([vinceixiv.github.io/SVT-cour](https://vinceixiv.github.io/SVT-cour/)) : sa page d'accueil `index.html`, générée par `usine/outils/site_web.py`, présente le programme de l'année et les boutons de téléchargement de chaque séance ; c'est le lien de référence pour les utilisateurs. Le dépôt public contient : `index.html` et `.nojekyll` (le site), `programme-annuel.pdf` (programme de l'année de 4e et de 3e, semaine par semaine, généré par `usine/outils/programme.py`), `cours/` (mêmes chemins qu'ici, **sans README** ; l'enseignant télécharge chaque document), une copie de ce `CLAUDE.md` (pour que le validateur relise avec les mêmes règles) et `verif/`, où le validateur dépose ses rapports (`verif/<classe>/<séance>-vN.md`, une version par relecture). La publication ne modifie jamais `verif/`.
 
 ```
 SVT-class/
@@ -146,7 +146,7 @@ SVT-class/
 - Rien d'autre que des documents de cours dans `cours/` : textes sources, scripts, images et fichiers de contrôle vont dans `usine/`.
 - Tout fichier Word est aussi exporté en PDF.
 - Aucun README ni aucun fichier hors cours dans `cours/` (seulement .pdf, .docx, .pptx).
-- Après chaque séance produite : `python usine/outils/publier.py` (programme de l'année régénéré, copie de `cours/` vers le dépôt public et envoi, sous l'auteur neutre « Cours de SVT » : aucune adresse personnelle dans le dépôt public).
+- Après chaque séance produite : `python usine/outils/publier.py` (programme de l'année et site régénérés, copie de `cours/` vers le dépôt public et envoi, sous l'auteur neutre « Cours de SVT » : aucune adresse personnelle dans le dépôt public).
 - Les documents portent l'auteur « Cours de SVT » dans leurs propriétés.
 
 ## 8. Mise en page
