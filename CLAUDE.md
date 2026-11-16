@@ -110,7 +110,7 @@ Source : présentation de l'inspection générale, septembre 2026 (BO spécial n
 
 ## 7. Organisation du dépôt
 
-Ce dépôt (`SVT-class`) est **privé**. Il a deux parties : **`cours/`**, les documents de cours, et **`usine/`**, tout ce qui sert à les fabriquer. Le contenu de `cours/` est publié dans le dépôt **public** [VinceIXIV/SVT-cour](https://github.com/VinceIXIV/SVT-cour), dont l'enseignant reçoit le lien. Le dépôt public contient : `cours/` (mêmes chemins qu'ici, **sans README** ; l'enseignant télécharge chaque document ou le zip de la séance), une copie de ce `CLAUDE.md` (pour que le validateur relise avec les mêmes règles) et `verification/`, où le validateur dépose ses rapports. La publication ne modifie jamais `verification/`.
+Ce dépôt (`SVT-class`) est **privé**. Il a deux parties : **`cours/`**, les documents de cours, et **`usine/`**, tout ce qui sert à les fabriquer. Le contenu de `cours/` est publié dans le dépôt **public** [VinceIXIV/SVT-cour](https://github.com/VinceIXIV/SVT-cour), dont l'enseignant reçoit le lien. Le dépôt public contient : `cours/` (mêmes chemins qu'ici, **sans README** ; l'enseignant télécharge chaque document ou le zip de la séance), une copie de ce `CLAUDE.md` (pour que le validateur relise avec les mêmes règles) et `verif/`, où le validateur dépose ses rapports (`verif/<classe>/<séance>-vN.md`, une version par relecture). La publication ne modifie jamais `verif/`.
 
 ```
 SVT-class/
@@ -160,7 +160,7 @@ La charte graphique (version 2) est décrite dans `usine/commun/charte.md` et ap
 2. Produire **une semaine à la fois**, en suivant le skill `seance-svt`.
 3. **Vérifier visuellement** chaque document généré : convertir les .docx et .pptx en images (PDF puis PNG) et les regarder avant de déclarer le travail terminé. Vérifier aussi la lecture des animations PowerPoint (ordre des clics).
 4. Faire **un commit par semaine produite**, avec un message clair (`4e S01 terre active : fiches, diaporama`), et pousser sur le dépôt distant pour permettre une relecture externe.
-5. **Relecture externe :** un validateur (un autre Claude) relit le dépôt public et dépose ses rapports dans le répertoire `verification/` du dépôt public VinceIXIV/SVT-cour. Avant de produire ou de corriger une séance, lire le dernier rapport et traiter chaque remarque : la corriger (en la vérifiant à une source), ou noter dans `usine/AVANCEMENT.md` pourquoi elle n'est pas retenue.
+5. **Relecture externe :** un validateur (un autre Claude) relit le dépôt public et dépose ses rapports dans le dossier `verif/<classe>/` du dépôt public VinceIXIV/SVT-cour (fichiers `<séance>-vN.md` ; lire la version la plus récente). Avant de produire ou de corriger une séance, lire le dernier rapport et traiter chaque remarque : la corriger (en la vérifiant à une source), ou noter dans `usine/AVANCEMENT.md` pourquoi elle n'est pas retenue.
 6. Tenir à jour `usine/AVANCEMENT.md` : un tableau des semaines (classe, semaine, chapitre, statut, remarques).
 
 ## 10. Liste de vérification avant chaque commit
