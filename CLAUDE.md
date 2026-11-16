@@ -156,7 +156,7 @@ La charte graphique (version 2) est décrite dans `usine/commun/charte.md` et ap
 ## 9. Méthode de travail
 
 1. **Commencer par un chapitre pilote** (4e, S01) produit en entier, puis attendre la validation de l'utilisateur avant de continuer.
-2. Produire **une semaine à la fois**, en suivant le skill `seance-svt`.
+2. Produire **une semaine à la fois**, **dans une nouvelle session**, en suivant le skill `seance-svt` (sa section « Économie de tokens » dit quoi lire et quoi ne pas relire). Les intitulés des séances sont dans `PROGRAMME` de `usine/outils/programme.py`.
 3. **Vérifier visuellement** chaque document généré : convertir les .docx et .pptx en images (PDF puis PNG) et les regarder avant de déclarer le travail terminé. Vérifier aussi la lecture des animations PowerPoint (ordre des clics).
 4. Faire **un commit par semaine produite**, avec un message clair (`4e S01 terre active : fiches, diaporama`), et pousser sur le dépôt distant pour permettre une relecture externe.
 5. **Relecture externe :** un validateur (un autre Claude) relit le dépôt public et dépose ses rapports dans le dossier `verif/<classe>/` du dépôt public VinceIXIV/SVT-cour (fichiers `<séance>-vN.md` ; lire la version la plus récente). Avant de produire ou de corriger une séance, lire le dernier rapport et traiter chaque remarque : la corriger (en la vérifiant à une source), ou noter dans `usine/AVANCEMENT.md` pourquoi elle n'est pas retenue.
