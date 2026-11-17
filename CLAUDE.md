@@ -29,7 +29,7 @@ Ce dépôt contient tout le cours de SVT (sciences de la vie et de la Terre) de 
 
 Thèmes du programme : **T1** = La planète Terre, l'environnement et l'action humaine ; **T2** = Le vivant et son évolution ; **T3** = Le corps humain et la santé.
 
-### 4e — 29 semaines de chapitres + 6 semaines de devoirs mensuels et rattrapages
+### 4e — 28 semaines de chapitres + 7 semaines de devoirs mensuels et rattrapages
 
 | Semaines | Chapitre | Thème |
 | --- | --- | --- |
@@ -38,9 +38,9 @@ Thèmes du programme : **T1** = La planète Terre, l'environnement et l'action h
 | S10-S15 | Nutrition et besoins des cellules : digestion, respiration, circulation | T2 / T3 |
 | S16-S18 | Nutrition des plantes et transport des matières | T2 |
 | S19-S24 | Système nerveux, muscles et cerveau ; hygiène de vie (sommeil, écrans, substances) | T3 |
-| S25-S29 | Reproduction des êtres vivants (plantes, animaux) et transmission de la vie chez l'humain, version sobre | T2 / T3 |
+| S25-S28 | Reproduction des êtres vivants (plantes, animaux), fécondation et développement de la cellule-œuf à l'organisme | T2 |
 
-### 3e — 26 semaines de chapitres + 9 semaines de devoirs mensuels et rattrapages
+### 3e — 27 semaines de chapitres + 8 semaines de devoirs mensuels et rattrapages
 
 | Semaines | Chapitre | Thème |
 | --- | --- | --- |
@@ -48,7 +48,8 @@ Thèmes du programme : **T1** = La planète Terre, l'environnement et l'action h
 | S07-S11 | Diversité génétique, parenté et évolution des êtres vivants | T2 |
 | S12-S16 | Monde microbien et immunité : infections, vaccins, antibiotiques | T3 |
 | S17-S21 | Activités humaines et environnement : ressources, changement climatique, biodiversité | T1 |
-| S22-S26 | Révisions brevet et brevet blanc | Tous |
+| S22 | Transmission de la vie chez l'humain, au niveau cellulaire, version sobre (dernier cours de l'année) | T2 / T3 |
+| S23-S27 | Révisions brevet et brevet blanc | Tous |
 
 La numérotation SXX compte les semaines de chapitre. Les semaines de devoir et de rattrapage s'intercalent dans le calendrier réel sans dossier propre : le devoir mensuel est rangé dans la semaine où il est donné.
 
@@ -126,7 +127,7 @@ SVT-class/
 │   │   │   └── 4e-S01-devoir-mensuel.docx / .pdf   (seulement la semaine où il est donné)
 │   │   └── …
 │   └── 3e/
-│       └── S22-…/ 3e-S22-sujet-type-brevet.docx / .pdf
+│       └── S23-…/ 3e-S23-sujet-type-brevet.docx / .pdf
 └── usine/                          FABRICATION (pas pour l'enseignant)
     ├── AVANCEMENT.md               suivi des semaines et listes de vérification
     ├── _publication/               copie locale du dépôt public (ignorée par git)
